@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>PuraCalle</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="Register">
+    <div class="container-fluid">
+      <h2 class="Title text-right text-uppercase mb-3"><span>Inscripciones</span></h2>
+      <div class="row justify-content-end">
+        <div class="col-8 col-xl-7">
+          <form class="Form Form--wrapper">
+            <div class="form-row Form__row">
+              <div class="form-group col-md-6 Form__group">
+                <label for="style_id" class="sr-only Form__label">Estilo</label>
+                <select name="style_id" id="style_id" class="form-control Form__control">
+                  <option value="">Estilo</option>
+                  <option value="1">Estilo 1</option>
+                  <option value="2">Estilo 2</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6 Form__group">
+                <label for="type_id" class="sr-only Form__label">Responsable/Participante</label>
+                <select name="type_id" id="type_id" class="form-control Form__control">
+                  <option value="">Responsable/Participante</option>
+                  <option value="1">Responsable</option>
+                  <option value="2">Participante</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row Form__row">
+              <div class="form-group col-md-6 Form__group">
+                <label for="name" class="Form__label">Nombre/AKA</label>
+                <input type="text" class="form-control Form__control" name="name" id="name" placeholder="Nombre/AKA" />
+              </div>
+              <div class="form-group col-md-6 Form__group">
+                <label for="name_couple" class="Form__label">Nombre/AKA de la pareja</label>
+                <input type="text" class="form-control Form__control" name="name_couple" id="name_couple" placeholder="Nombre/AKA de la pareja" />
+              </div>
+            </div>
+
+            <div class="form-row Form__row">
+              <div class="form-group col-md-6 Form__group">
+                <label for="phone" class="Form__label">Teléfono</label>
+                <input type="text" class="form-control Form__control" name="phone" id="phone" placeholder="Teléfono" />
+              </div>
+              <div class="form-group col-md-6 Form__group">
+                <label for="email" class="Form__label">Email</label>
+                <input type="email" class="form-control Form__control" name="email" id="email" placeholder="Email" />
+              </div>
+            </div>
+
+            <div class="form-row Form__row">
+              <div class="form-group col-md-6 Form__group">
+                <label for="dni" class="Form__label">DNI/Pasaporte</label>
+                <input type="text" class="form-control Form__control" name="dni" id="dni" placeholder="DNI/Pasaporte" />
+              </div>
+              <div class="form-group col-md-6 Form__group">
+                <label for="country" class="Form__label">País de Procedencia</label>
+                <input type="email" class="form-control Form__control" name="country" id="country" placeholder="País de Procedencia" />
+              </div>
+            </div>
+
+            <div class="form-row Form__row">
+              <div class="form-group col-md-6 Form__group">
+                <label for="city" class="Form__label">Ciudad de Procedencia</label>
+                <input type="text" class="form-control Form__control" name="city" id="city" placeholder="Ciudad de Procedencia" />
+              </div>
+            </div>
+
+            <p class="text-center">
+              <button type="submit" class="Button">Registrar</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="text/javascript" src="js/min/bundle.js"></script>
+  <script type="text/javascript" src="js/min/script.js"></script>
+</body>
+</html>

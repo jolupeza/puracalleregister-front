@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>PuraCalle</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="Login">
+    <header class="Login__header">
+      <div class="container">
+        <h1 class="Login__logo text-center mb-0">
+          <img src="images/logo.png" alt="PuraCalle" class="img-fluid" />
+        </h1>
+      </div>
+    </header>
+    <div class="container">
+      <h2 class="Title text-center text-uppercase mb-5"><span>Inicio de sesión</span></h2>
+      <div class="row justify-content-center">
+        <div class="col-5">
+          <form class="Form Form--login">
+            <div class="form-group">
+              <label for="username" class="sr-only">Usuario</label>
+              <div class="input-group Form__inputGroup">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addonUsername"><i class="icon-user"></i></span>
+                </div>
+                <input type="text" class="form-control Form__control" name="username" id="username" placeholder="Usuario" aria-label="Usuario" aria-describedby="basic-addonUsername">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password" class="sr-only">Contraseña</label>
+              <div class="input-group Form__inputGroup">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addonPassword"><i class="icon-key"></i></span>
+                </div>
+                <input type="password" class="form-control Form__control" id="password" name="password" placeholder="Contraseña" aria-label="Contraseña" aria-describedby="basic-addonPassword">
+              </div>
+            </div>
+            <p class="text-center">
+              <button type="submit" class="Button">Entrar</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="text/javascript" src="js/min/bundle.js"></script>
+  <script type="text/javascript" src="js/min/script.js"></script>
+</body>
+</html>

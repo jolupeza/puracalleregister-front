@@ -1,0 +1,107 @@
+.Form {
+  &--login {
+    .Form__control {
+      border: 1px solid #000;
+      border-radius: .25rem;
+      color: #000;
+      font-size: 1.125rem;
+      &::placeholder {
+        color: black;
+      }
+    }
+  }
+  &--wrapper {
+    background-color: rgba(white, .85);
+    border-radius: 2rem;
+    padding: 2rem 3rem;
+  }
+}
+.Form__row {
+  .Form__group {
+    &:first-child {
+      padding-right: 1rem;
+    }
+    &:last-child {
+      padding-left: 1rem;
+    }
+  }
+}
+.Form__group {
+  position: relative;
+  &.has-feedback {
+    &.has-error {
+      .Form__control {
+        border-color: var(--danger);
+      }
+      .help-block {
+        color: var(--danger);
+      }
+      .form-control-feedback {
+        color: var(--danger);
+      }
+    }
+    &.has-success {
+      .Form__control {
+        border-color: var(--success);
+      }
+      .form-control-feedback {
+        color: var(--success);
+      }
+    }
+    .form-control-feedback {
+      align-items: center;
+      display: flex;
+      height: 50px;
+      font-size: 1.5em;
+      justify-content: center;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50px;
+    }
+    select.Form__control {
+      + .form-control-feedback {
+        right: 30px;
+      }
+    }
+  }
+}
+.Form__inputGroup {
+  .input-group-text {
+    background-color: #fff;
+    border-right: none;
+    border-color: #000;
+  }
+  .Form__control {
+    border-left: none;
+  }
+}
+.Form__label {
+  font-family: $helveticaThin;
+  &.active {
+    color: $accentColor;
+  }
+}
+.Form__control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $darkColor;
+  border-radius: 0;
+  color: $darkColor;
+  font-family: $helveticaLight;
+  &::placeholder {
+    color: $textColor;
+  }
+  &:focus {
+    background-color: transparent;
+    border-color: $accentColor;
+    box-shadow: none;
+  }
+  // &[disabled] {
+  //   &::placeholder {
+  //   }
+  // }
+}
+select.Form__control:not([size]):not([multiple]) {
+  // height: auto;
+}

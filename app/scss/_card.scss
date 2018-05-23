@@ -1,0 +1,119 @@
+.Card {
+  overflow: hidden;
+  &--hover {
+    overflow: hidden;
+  }
+}
+.Card__figure {
+  &--hover {
+    position: relative;
+    /*&:hover {
+      .Card__info--hover {
+        right: 0;
+      }
+    }*/
+  }
+}
+.Card__info {
+  &--hover {
+    background-color: $firstColor;
+    bottom: 15px;
+    overflow: hidden;
+    padding: .8rem;
+    position: absolute;
+    right: 0;
+    transition: right .3s ease-out;
+    width: 90%;
+    .Card__title {
+      color: $secondColor;
+      a {
+        color: $accentColor;
+        &:focus, &:hover {
+          color: lighten($secondColor, 10%);
+        }
+      }
+      @media screen and (max-width: 991px) {
+        font-size: 1.5rem;
+      }
+    }
+    .Card__text {
+      color: white;
+    }
+    @media screen and (max-width: 991px) {
+      padding: .5rem;
+      right: 0;
+      top: auto;
+      width: 100%;
+    }
+  }
+  &--bg {
+    background-color: $firstColor;
+    padding: 1rem;
+    .Card__title {
+      color: $secondColor;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+    .Card__subtitle {
+      color: white;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+  }
+}
+.Card__title {
+  font-size: 1.375rem;
+  a {
+    color: $secondColor;
+    &:focus, &:hover {
+      color: $firstColor;
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 1.125rem;
+  }
+}
+.Card__subtitle {
+  @media screen and (max-width: 1199px) {
+    font-size: 1.25rem;
+  }
+}
+.Card__text {
+}
+.Card__posts {
+  justify-content: space-between;
+  display: flex;
+  &--feature {
+    display: block;
+    .Card__posts__figure, .Card__posts__info {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    margin-bottom: 2rem;
+  }
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+}
+.Card__posts__figure, .Card__posts__info {
+  width: 48%;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+.Card__posts__title {
+  font-weight: 700;
+}
+.Card__posts__date {
+  color: $textColor;
+  font-weight: 400;
+}
+.Card__posts__text {
+  p {
+    font-size: 1rem;
+  }
+}
