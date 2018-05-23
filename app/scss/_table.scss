@@ -1,0 +1,16 @@
+.Table {
+  thead {
+    th {
+      color: black;
+      font-family: $helveticaBold;
+      font-size: 1rem;
+    }
+  }
+  tbody {
+    th, td {
+      color: #2b2b2b;
+      font-family: $helveticaLight;
+      vertical-align: middle;
+    }
+  }
+}

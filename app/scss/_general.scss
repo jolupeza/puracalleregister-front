@@ -12,10 +12,10 @@ body {
   }
 }
 a {
-  color: $firstColor;
+  color: $secondColor;
   transition: color .3s ease-out, background-color .2s ease-in-out;
   &.hover, &:focus, &:hover {
-    color: $accentColor;
+    color: $firstColor;
     text-decoration: none;
   }
 }

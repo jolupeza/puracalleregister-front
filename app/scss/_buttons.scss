@@ -47,6 +47,11 @@
       }
     }
   }
+  &--table {
+    background-color: $greenColor;
+    font-size: .875rem;
+    padding: .3rem 1rem;
+  }
   &--lg {
     font-size: 1.875rem;
     padding: 1rem 2.5rem;

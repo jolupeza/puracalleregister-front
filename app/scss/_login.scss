@@ -6,3 +6,10 @@
 .Login__header {
   padding: .5rem 0;
 }
+.Login__logo {
+  &--min {
+    img {
+      width: 10%;
+    }
+  }
+}

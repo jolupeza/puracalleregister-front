@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>PuraCalle</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="Login">
+    <header class="Login__header">
+      <div class="container">
+        <h1 class="Login__logo Login__logo--min text-center mb-0">
+          <img src="images/logo.png" alt="PuraCalle" class="img-fluid" />
+        </h1>
+      </div>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <nav class="Nav mb-3 d-flex align-items-center">
+            <ul class="Nav__list d-flex">
+              <li class="Nav__list__item active">
+                <a class="nav-link" href="#">Estilo 1</a>
+              </li>
+              <li class="Nav__list__item">
+                <a class="nav-link" href="#">Estilo 2</a>
+              </li>
+              <li class="Nav__list__item">
+                <a class="nav-link" href="#">Estilo 3</a>
+              </li>
+              <li class="Nav__list__item">
+                <a class="nav-link" href="#">Estilo 4</a>
+              </li>
+              <li class="Nav__list__item">
+                <a class="nav-link" href="#">Estilo 5</a>
+              </li>
+            </ul>
+            <form class="form-inline Nav__search">
+              <div class="input-group">
+                <input type="text" class="form-control" aria-describedby="basic-addonSearch" />
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addonSearch"><i class="icon-search"></i></span>
+                </div>
+              </div>
+            </form>
+            <a class="nav-link Nav__link" href="#"><i class="icon-plus"></i> Agregar participante</a>
+            <a class="nav-link Nav__link" href="#">Inscripciones</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <section class="Card">
+            <table class="table Table">
+              <thead>
+                <tr>
+                  <th scope="col">Responsable/Participante</th>
+                  <th scope="col">Nombre/AKA</th>
+                  <th scope="col">Nombre de la pareja/AKA</th>
+                  <th scope="col">Teléfono</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">País de Procedencia</th>
+                  <th scope="col">Ciudad de Procedencia</th>
+                  <th scope="col">DNI/Pasaporte</th>
+                  <th scope="col">Forma de pago</th>
+                  <th scope="col"># Operación</th>
+                  <th scope="col">Confirmar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">
+                    <select class="form-control" name="type" id="type">
+                      <option value="1">Responsable</option>
+                      <option value="2">Participante</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input class="form-control" type="text" name="name" id="name" value="" placeholder="Nombre/AKA" />
+                  </td>
+                  <td>
+                    <input class="form-control" type="text" name="name_couple" id="name_couple" value="" placeholder="Nombre de la pareja AKA" />
+                  </td>
+                  <td>
+                    <input class="form-control" type="text" name="phone" id="phone" value="" placeholder="Teléfono" />
+                  </td>
+                  <td>
+                    <input class="form-control" type="email" name="email" id="email" value="" placeholder="Email" />
+                  </td>
+                  <td>
+                    <input class="form-control" type="text" name="country" id="country" value="" placeholder="País" />
+                  </td>
+                  <td>
+                    <input class="form-control" type="text" name="city" id="city" value="" placeholder="Ciudad" />
+                  </td>
+                  <td>
+                    <input class="form-control" type="text" name="dni" id="dni" value="" placeholder="DNI/Pasaporte" />
+                  </td>
+                  <td>
+                    <select class="form-control" name="payment" id="payment">
+                      <option value="1">Banco</option>
+                      <option value="2">Efectivo</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input class="form-control" type="text" name="nro" id="nro" value="125171217929" />
+                  </td>
+                  <td>
+                    <button class="Button Button--table">Confirmar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Responsable</td>
+                  <td>Marco Puente/Fox</td>
+                  <td>Eduardo/Mc'as</td>
+                  <td>999 999 999</td>
+                  <td>nombre@test.pe</td>
+                  <td>Argentina</td>
+                  <td>Buenos Aires</td>
+                  <td>99999999</td>
+                  <td>
+                    <select class="form-control" name="payment" id="payment">
+                      <option value="1">Banco</option>
+                      <option value="2">Efectivo</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input class="form-control" type="text" name="nro" id="nro" value="125171217929" />
+                  </td>
+                  <td>
+                    <button class="Button Button--table">Confirmar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Responsable</td>
+                  <td>Marco Puente/Fox</td>
+                  <td>Eduardo/Mc'as</td>
+                  <td>999 999 999</td>
+                  <td>nombre@test.pe</td>
+                  <td>Argentina</td>
+                  <td>Buenos Aires</td>
+                  <td>99999999</td>
+                  <td>
+                    <select class="form-control" name="payment" id="payment">
+                      <option value="1">Banco</option>
+                      <option value="2">Efectivo</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input class="form-control" type="text" name="nro" id="nro" value="125171217929" />
+                  </td>
+                  <td>
+                    <button class="Button Button--table">Confirmar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Responsable</td>
+                  <td>Marco Puente/Fox</td>
+                  <td>Eduardo/Mc'as</td>
+                  <td>999 999 999</td>
+                  <td>nombre@test.pe</td>
+                  <td>Argentina</td>
+                  <td>Buenos Aires</td>
+                  <td>99999999</td>
+                  <td>
+                    <select class="form-control" name="payment" id="payment">
+                      <option value="1">Banco</option>
+                      <option value="2">Efectivo</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input class="form-control" type="text" name="nro" id="nro" value="125171217929" />
+                  </td>
+                  <td>
+                    <button class="Button Button--table">Confirmar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Responsable</td>
+                  <td>Marco Puente/Fox</td>
+                  <td>Eduardo/Mc'as</td>
+                  <td>999 999 999</td>
+                  <td>nombre@test.pe</td>
+                  <td>Argentina</td>
+                  <td>Buenos Aires</td>
+                  <td>99999999</td>
+                  <td>
+                    <select class="form-control" name="payment" id="payment">
+                      <option value="1">Banco</option>
+                      <option value="2">Efectivo</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input class="form-control" type="text" name="nro" id="nro" value="125171217929" />
+                  </td>
+                  <td>
+                    <button class="Button Button--table">Confirmar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Responsable</td>
+                  <td>Marco Puente/Fox</td>
+                  <td>Eduardo/Mc'as</td>
+                  <td>999 999 999</td>
+                  <td>nombre@test.pe</td>
+                  <td>Argentina</td>
+                  <td>Buenos Aires</td>
+                  <td>99999999</td>
+                  <td>
+                    <select class="form-control" name="payment" id="payment">
+                      <option value="1">Banco</option>
+                      <option value="2">Efectivo</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input class="form-control" type="text" name="nro" id="nro" value="125171217929" />
+                  </td>
+                  <td>
+                    <button class="Button Button--table">Confirmar</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="text/javascript" src="js/min/bundle.js"></script>
+  <script type="text/javascript" src="js/min/script.js"></script>
+</body>
+</html>
