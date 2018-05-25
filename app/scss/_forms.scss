@@ -28,7 +28,12 @@
 }
 .Form__group {
   position: relative;
-  &.has-feedback {
+  &.has-error {
+    .input-group-text {
+      border-color: var(--danger);
+    }
+  }
+  /* &.has-feedback {
     &.has-error {
       .Form__control {
         border-color: var(--danger);
@@ -64,7 +69,7 @@
         right: 30px;
       }
     }
-  }
+  } */
 }
 .Form__inputGroup {
   .input-group-text {
@@ -96,6 +101,13 @@
     background-color: transparent;
     border-color: $accentColor;
     box-shadow: none;
+  }
+  &.is-invalid {
+    border-color: var(--danger);
+  }
+  + .invalid-feedback {
+    font-family: $helveticaLight;
+    font-size: 90%;
   }
   // &[disabled] {
   //   &::placeholder {

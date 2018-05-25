@@ -59,13 +59,7 @@
     border: none;
     color: $firstColor;
     font-family: $helveticaThin;
-    width: 250px;
-    @media screen and (max-width: 1300px) {
-      width: 150px;
-    }
-    @media screen and (max-width: 1199px) {
-      width: 250px;
-    }
+    width: 150px;
   }
   .input-group-text {
     background-color: $thirdColor;

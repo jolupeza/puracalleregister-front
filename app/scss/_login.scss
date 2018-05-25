@@ -13,3 +13,15 @@
     }
   }
 }
+.Logout {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  a {
+    color: $secondColor;
+    font-family: $helveticaLight;
+    &:focus, &:hover {
+      color: $accentColor;
+    }
+  }
+}
